@@ -1,28 +1,28 @@
-public with sharing                       class                        maker {
-    public void SaveUpdateDml() {
+public with sharing class Maker {
+    public void saveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         insert cs;
 
         Account a = new Account();
+        insert a;
         while(true) {
-            insert a;
         }
     }
-    
-    public void DeleteUpsertDml() {
+
+    public void deleteUpsertDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
+        upsert cs;
         while(true) {
-            upsert cs;
         }
-        
+
         Account a = new Account();
+        delete a;
         while(true) {
-            delete a;
         }
-        
+
         Account b = new Account();
+        undelete b;
         while(true) {
-            undelete b;
         }
     }
 }
