@@ -1,0 +1,179 @@
+
+[36m___________________________________________  
+	Username: fernando.hurtado@jalasonft.com           
+	Login type: login
+___________________________________________  
+[0m
+Failed execute task
+:retrieve FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':retrieve'.
+> Invalid username, password, security token; or user locked out.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':retrieve'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:208)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:186)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:111)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher$6.run(DefaultGradleLauncher.java:174)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:47)
+	at org.gradle.initialization.DefaultGradleLauncher.runBuildOperation(DefaultGradleLauncher.java:189)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:171)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:104)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:97)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.runRootBuildOperation(DefaultGradleLauncher.java:184)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:97)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:93)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:50)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:27)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:72)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:44)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:49)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.DaemonHealthTracker.execute(DaemonHealthTracker.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:66)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:71)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.health.HintGCAfterBuild.execute(HintGCAfterBuild.java:41)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:246)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+Caused by: org.gradle.api.GradleException: Invalid username, password, security token; or user locked out.
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask.withExceptionHandling(ForceTask.groovy:125)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask.this$4$withExceptionHandling(ForceTask.groovy)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask$this$4$withExceptionHandling.callCurrent(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask$this$4$withExceptionHandling.callCurrent(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask.start(ForceTask.groovy:57)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 69 more
+Caused by: java.lang.Exception: Invalid username, password, security token; or user locked out.
+	at org.fundacionjala.gradle.plugins.enforce.wsc.Connector.login(Connector.groovy:65)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.Connector$login$0.call(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.ForceAPI.createConnector(ForceAPI.groovy:45)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.ForceAPI.<init>(ForceAPI.groovy:37)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.ForceAPI.<init>(ForceAPI.groovy:26)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.soap.MetadataAPI.<init>(MetadataAPI.groovy:36)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.ForceFactory.getForceAPI(ForceFactory.groovy:30)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.ForceFactory$getForceAPI.call(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.metadata.RetrieveMetadata.executeRetrieve(RetrieveMetadata.groovy:64)
+	at org.fundacionjala.gradle.plugins.enforce.metadata.RetrieveMetadata$executeRetrieve.call(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.retrieve.Retrieval.executeRetrieve(Retrieval.groovy:72)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.retrieve.Retrieval$executeRetrieve.callCurrent(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.retrieve.Retrieve.runRetrieve(Retrieve.groovy:134)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.retrieve.Retrieve.retrieveWithPackageXml(Retrieve.groovy:121)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.retrieve.Retrieve.runTask(Retrieve.groovy:48)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.salesforce.SalesforceTask.executeTask(SalesforceTask.groovy:259)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask$_start_closure1.doCall(ForceTask.groovy:58)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask$_start_closure1.doCall(ForceTask.groovy)
+	at org.fundacionjala.gradle.plugins.enforce.tasks.ForceTask.withExceptionHandling(ForceTask.groovy:107)
+	... 81 more
+Caused by: [LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+]
+]
+
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:650)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:527)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:230)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:204)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:150)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:99)
+	at com.sforce.soap.partner.PartnerConnection.login(PartnerConnection.java:1349)
+	at com.sforce.soap.partner.PartnerConnection$login.call(Unknown Source)
+	at org.fundacionjala.gradle.plugins.enforce.wsc.Connector.login(Connector.groovy:57)
+	... 99 more
+
+
+BUILD FAILED
+
+Total time: 5.327 secs
+11:43:10.928 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/fernando_hurtado/NetBeansProjects/ApexDemo/build.gradle' (/home/fernando_hurtado/.gradle/caches/2.5/scripts/build_13nf7o9i0hm8d59blpssstnk0/ProjectScript/buildscript).
+11:43:10.929 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/fernando_hurtado/NetBeansProjects/ApexDemo/build.gradle' (/home/fernando_hurtado/.gradle/caches/2.5/scripts/build_13nf7o9i0hm8d59blpssstnk0/ProjectScript/no_buildscript).
+11:43:10.931 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Plugin Resolution Cache (/home/fernando_hurtado/.gradle/caches/2.5/plugin-resolution) was closed 0 times.
+11:43:10.932 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-versions.bin (/home/fernando_hurtado/.gradle/caches/modules-2/metadata-2.15/module-versions.bin)
+11:43:10.934 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/fernando_hurtado/.gradle/caches/modules-2/metadata-2.15/module-metadata.bin)
+11:43:10.935 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/fernando_hurtado/.gradle/caches/modules-2/metadata-2.15/artifact-at-repository.bin)
+11:43:10.936 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/fernando_hurtado/.gradle/caches/modules-2).
+11:43:10.938 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache task history cache (/home/fernando_hurtado/NetBeansProjects/ApexDemo/.gradle/2.5/taskArtifacts) was closed 0 times.
+11:43:10.939 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 2, cache instances: 2, modules served from cache: 0, artifacts: 0
+11:43:10.941 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+11:43:10.942 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+11:43:10.943 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.003 secs
+11:43:10.943 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+11:43:11.233 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+11:43:11.235 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=fb662603-be3f-44fc-99a9-bcd42b44af1f.1, currentDir=/home/fernando_hurtado}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@679f8fa3]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@63e2235b with state Running
+11:43:11.236 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=fb662603-be3f-44fc-99a9-bcd42b44af1f.1, currentDir=/home/fernando_hurtado}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@679f8fa3]
+11:43:11.238 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1456328591238
+11:43:11.239 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [ba3bf483-54ed-4688-acf5-fee1149e486c port:48151, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+11:43:11.240 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [ba3bf483-54ed-4688-acf5-fee1149e486c port:48151, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+11:43:11.242 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+11:43:11.243 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+11:43:11.256 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+11:43:11.258 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: CommandFailure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':retrieve'.]
+11:43:11.258 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Wed Feb 24 14:43:11 BOT 2016
+11:43:11.259 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 87: dispatching class org.gradle.launcher.daemon.protocol.CommandFailure
+11:43:11.280 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=fb662603-be3f-44fc-99a9-bcd42b44af1f.1, currentDir=/home/fernando_hurtado}
+11:43:11.324 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 88: received class org.gradle.launcher.daemon.protocol.Finished
+11:43:11.326 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2e6ea9f0
+11:43:11.327 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 88: received null
+11:43:11.328 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+11:43:11.329 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+11:43:11.330 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 87: stopping connection
+11:43:11.333 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 87: stopping connection
