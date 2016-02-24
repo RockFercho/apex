@@ -1,5 +1,5 @@
-
 public   with sharing                       class                        maker {
+
     public void SaveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         insert cs;
