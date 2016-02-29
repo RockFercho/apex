@@ -1,29 +1,30 @@
-public with sharing class maker {
-    public void SaveUpdateDml() {
+public with sharing 
+class maker {
+    public void saveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         insert cs;
 
         Account account = new Account();
         while(true) {
-            insert account;
         }
+        insert account;
     }
 
-    public void DeleteUpsertDml() {
+    public void deleteUpsertDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         while(true) {
-            upsert cs;
         }
+        upsert cs;
 
         Account a = new Account();
         while(true) {
-            delete a;
         }
+        delete a;
 
         Account b = new Account();
         while(true) {
-            undelete b;
         }
+        undelete b;
     }
 
     @isTest public void testType() {
@@ -33,6 +34,5 @@ public with sharing class maker {
 
     @deprecated
     public void myInit() {
-        Integerito max = 10;
     }
 }
