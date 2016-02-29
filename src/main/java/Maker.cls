@@ -1,11 +1,12 @@
 public   with sharing                       class                             maker {
-    public void SaveUpdateDml() {  
+
+    public void SaveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         insert cs;
 
-        Account a = new Account();
+        Account account = new Account();
         while(true) {
-            insert a;
+            insert account;
         }
     }
     
