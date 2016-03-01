@@ -1,4 +1,4 @@
-public   with sharing                       class                               maker {
+public   with sharing                            class                               maker {
 
     public void SaveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
@@ -17,7 +17,8 @@ public   with sharing                       class                               
         }
     }
     
-    @isTest public void testType() {
+    @isTest 
+    public void testType() {
         System.assert(true);
         System.assertEquals(name, name);
     }
