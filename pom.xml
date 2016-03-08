@@ -9,4 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>Apex Demo</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.language>apex</sonar.language>
+    </properties>
 </project>
