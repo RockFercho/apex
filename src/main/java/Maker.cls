@@ -4,19 +4,27 @@ public with sharing class Maker {
         insert cs;
 
         Account account = new Account();
-        insert account;
         while(true) {
+            insert account;
+        }
+        while(true) {
+            insert account;
         }
     }
 
     public void deleteUpsertDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
-        upsert cs;
         for(Account acct: listAccount) {
+            upsert cs;
         }
     }
 
     @deprecated
     public void myInit() {
+        int a = 0;
+    }
+
+    @isTest
+    public void testMethod() {
     }
 }
