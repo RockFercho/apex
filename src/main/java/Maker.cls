@@ -1,22 +1,29 @@
-public with sharing class Maker {
-    public void saveUpdateDml() {
+public   with sharing                          class                             maker {
+
+    public void SaveUpdateDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
         insert cs;
 
         Account account = new Account();
-        insert account;
         while(true) {
+            insert account;
         }
     }
-
-    public void deleteUpsertDml() {
+    
+    public void DeleteUpsertDml() {
         CustomSetting1__c cs = new CustomSetting1__c();
-        upsert cs;
         for(Account acct: listAccount) {
+            upsert cs;
         }
     }
-
-    @deprecated
-    public void myInit() {
+    
+    @isTest public void testType() {
+        System.assert(true);
+        System.assertEquals(name, name);
+    }
+    
+    @deprecated    
+    public void myInit(){
+        Person person = newPerson;
     }
 }
