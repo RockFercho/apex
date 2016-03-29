@@ -1,0 +1,5 @@
+projectKey=org.fundacionjala
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.fundacionjala
+ceTaskId=AVO-fl9Vn7jPWgFlIlO7
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVO-fl9Vn7jPWgFlIlO7
